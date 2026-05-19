@@ -56,3 +56,57 @@
 **Matériel :** Clé USB 8GB minimum
 
 **Résultat :** Clé USB bootable UEFI prête pour l'installation.
+
+## Étape 2 — Installation d'Ubuntu Desktop 24.04 LTS
+
+**Objectif :** Installer le système d'exploitation sur le SSD Samsung 980 1TB.
+
+**Paramètres d'installation :**
+
+| Paramètre | Valeur |
+|---|---|
+| Type d'installation | Interactive |
+| Version | Installation complète |
+| Drivers propriétaires | Activés (NVIDIA + codecs multimédia) |
+| Chiffrement disque | Aucun |
+
+**Résultat :** Ubuntu Desktop 24.04.4 LTS installé et fonctionnel.
+
+---
+
+## Étape 3 — Mise à jour du système
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+**Résultat :** Système à jour.
+
+---
+
+## Étape 4 — Installation et configuration de Cockpit
+
+**Objectif :** Mettre en place une interface web de gestion du serveur.
+
+```bash
+sudo apt install cockpit
+sudo systemctl enable --now cockpit.socket
+```
+
+**Accès :** `http://localhost:9090` ou `http://ip-du-serveur:9090`
+
+**Résultat :** Interface Cockpit accessible et opérationnelle.
+
+---
+
+## Étape 5 — Installation du driver NVIDIA
+
+```bash
+ubuntu-drivers devices  # identifier le driver recommandé
+sudo apt install nvidia-driver-535 -y
+```
+
+**Carte graphique détectée :** NVIDIA GeForce GTX 1050 Ti
+**Driver installé :** nvidia-driver-535
+
+**Résultat :** Driver NVIDIA installé, erreurs DRM résolues.
