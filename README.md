@@ -9,12 +9,12 @@
 - [Matériel](#matériel)
 - [Logiciels](#logiciels)
 - [Étape 1 — Création de la clé USB bootable](#étape-1--création-de-la-clé-usb-bootable)
-- [Étape 2 — Installation Ubuntu Desktop 24.04 LTS](#étape-2--installation-ubuntu-desktop-24.04-lts)
-- [Étape 3 — Mise à jour du système]
-- [Étape 4 — Installation et configuration de Cockpit]
-- [Étape 5 — Installation du driver NVIDIA]
-- [Étape 6 — Installation et configuration de Samba]
-- [Étape 7 — Montage automatique des disques]  
+- [Étape 2 — Installation Ubuntu Desktop 24.04 LTS](#étape-2--installation-ubuntu-desktop-2404-lts)
+- [Étape 3 — Mise à jour du système](#étape-3--mise-à-jour-du-système)
+- [Étape 4 — Installation et configuration de Cockpit](#étape-4--installation-et-configuration-de-cockpit)
+- [Étape 5 — Installation du driver NVIDIA](#étape-5--installation-du-driver-nvidia)
+- [Étape 6 — Installation et configuration de Samba](#étape-6--installation-et-configuration-de-samba)
+- [Étape 7 — Montage automatique des disques](#étape-7--montage-automatique-des-disques)
 
 ---
 
