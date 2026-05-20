@@ -145,7 +145,7 @@ guest ok = yes
 sudo smbpasswd -a <name>
 ```
 
-**Résultat :** Partages accessibles depuis Windows via `\\192.168.1.17`.
+**Résultat :** Partages accessibles depuis Windows via `adresse ip du serveur`.
 
 ---
 
