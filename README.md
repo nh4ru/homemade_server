@@ -159,5 +159,7 @@ sudo mkdir -p /mnt/stockage_250gb
 ```
 
 **Configuration** (`/etc/fstab`) :
+```
 UUID=<uuid_disque_250go> /mnt/stockage_250gb ntfs-3g defaults,uid=1000,gid=1000 0 0
 UUID=<uuid_disque_3to> /mnt/stockage_3tb ntfs-3g defaults,uid=1000,gid=1000 0 0
+```
