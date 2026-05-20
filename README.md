@@ -98,7 +98,7 @@ sudo apt install cockpit
 sudo systemctl enable --now cockpit.socket
 ```
 
-**Accès :** `http://localhost:9090` ou `http://192.168.1.17:9090`
+**Accès :** `http://localhost:****` ou `adresse ip du serveur`
 
 **Résultat :** Interface Cockpit accessible et opérationnelle.
 
@@ -142,7 +142,7 @@ guest ok = yes
 
 **Création utilisateur Samba :**
 ```bash
-sudo smbpasswd -a nharu
+sudo smbpasswd -a <name>
 ```
 
 **Résultat :** Partages accessibles depuis Windows via `\\192.168.1.17`.
