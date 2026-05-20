@@ -9,7 +9,7 @@
 - [Matériel](#matériel)
 - [Logiciels](#logiciels)
 - [Étape 1 — Création de la clé USB bootable](#étape-1--création-de-la-clé-usb-bootable)
-- [Étape 2 — Installation d'Ubuntu Desktop 24.04 LTS]
+- [Étape 2 — Installation d'Ubuntu Desktop 24.04 LTS](#étape-2)
 - [Étape 3 — Mise à jour du système]
 - [Étape 4 — Installation et configuration de Cockpit]
 - [Étape 5 — Installation du driver NVIDIA]
