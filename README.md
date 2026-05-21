@@ -170,3 +170,61 @@ sudo mount -a
 ```
 
 **Résultat :** Les deux disques montés automatiquement au démarrage.
+
+## Étape 8 — Sécurisation du serveur
+
+**Objectif :** Mettre en place un pare-feu et protéger l'accès au serveur.
+
+### UFW (Pare-feu)
+
+```bash
+sudo ufw enable
+sudo ufw allow samba
+sudo ufw allow 9090
+sudo ufw allow ssh
+```
+
+**Résultat :** Pare-feu actif, seuls les ports nécessaires sont ouverts.
+
+### Fail2ban
+
+```bash
+sudo apt install fail2ban -y
+```
+
+**Résultat :** Protection automatique contre les tentatives de connexion par force brute.
+
+---
+
+## Étape 9 — Accès SSH distant
+
+**Objectif :** Accéder au terminal du NAS depuis n'importe quel appareil du réseau local.
+
+```bash
+sudo apt install openssh-server -y
+sudo systemctl enable --now ssh
+```
+
+**Connexion depuis Windows :**
+```powershell
+ssh nharu@192.168.1.17
+```
+
+**Résultat :** Accès distant chiffré au terminal du NAS depuis le Katana.
+
+---
+
+## Étape 10 — IP fixe
+
+**Objectif :** Garantir que le NAS garde toujours la même adresse IP.
+
+Configuration via **Paramètres → Wi-Fi → Freebox → IPv4 → Manuel** :
+
+| Paramètre | Valeur |
+|---|---|
+| Adresse | 192.168.1.17 |
+| Masque | 255.255.255.0 |
+| Passerelle | 192.168.1.254 |
+| DNS | 1.1.1.1 |
+
+**Résultat :** IP fixe, les lecteurs réseau Y: et Z: se reconnectent automatiquement au démarrage.
