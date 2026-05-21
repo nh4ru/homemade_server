@@ -15,6 +15,7 @@
 - [Étape 5 — Installation du driver NVIDIA](#étape-5--installation-du-driver-nvidia)
 - [Étape 6 — Installation et configuration de Samba](#étape-6--installation-et-configuration-de-samba)
 - [Étape 7 — Montage automatique des disques](#étape-7--montage-automatique-des-disques)
+- [Étape 8 — Sécurisarion du serveur](#étape-8--sécurisation-du-serveur)
 
 ---
 
